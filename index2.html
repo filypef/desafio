@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+/*
+    console.log('Boas-vindas');
+
+    let nome = 'Filype';
+
+    console.log(`Olá, ${nome}`);
+
+    alert(`Olá ${nome}`);
+
+    let linguagem = prompt('Qual a linguagem de programação que você mais gosta?');
+
+    console.log(linguagem);
+
+    let valor1 = 10;
+    let valor2 = 15;
+    let resultado = valor1 + valor2;
+
+    console.log(`A soma de ${valor1} e ${valor2} é igual ${resultado}`);
+
+    resultado = valor1 - valor2;
+
+    console.log(`A diferença entre ${valor1} e ${valor2} é igual a ${resultado}`);
+
+    let idade = prompt('Por favor informe sua idade?');
+
+    if(idade >= 18){
+        console.log(`é maior de idade ${idade}`);
+    }else{
+        console.log(`é menor de idade ${idade}`);
+    }
+
+    let numero = prompt('Por favor informe um número?');
+
+    if(numero > 0){
+        console.log('O número é positivo');
+    }else{
+        console.log('O número é negativo');
+    }
+
+    let numeroLoop = 1;
+
+    while(numeroLoop <= 10){
+        console.log(`O número é: ${numeroLoop}`);
+        numeroLoop++;
+    }
+
+    let nota = prompt('Digite uma nota?');
+
+    if(nota > 7){
+        console.log(`Você está Aprovado com a nota: ${nota}`);
+    }else{
+        console.log(`Você está Reprovado com a nota: ${nota}`);
+    }
+
+    let numeroAleatorio = Math.random();
+
+    console.log(`Numero aleatorio: ${numeroAleatorio}`);
+
+    console.log(`Numero aleatorio 10x: ${parseInt(numeroAleatorio * 10 + 1)}`)
+
+    console.log(`numero aleatorio 1000x: ${parseInt(numeroAleatorio * 1000 + 1)}`)
+    */
+
+
+    alert('Seja bem vindo');
+
+    let numeroMaximo = 10;
+    let numeroDaSorte = parseInt(Math.random() * numeroMaximo + 1);
+
+    let chute;
+    let tentativa = 1;
+    
+    console.log(numeroDaSorte);
+
+    while(chute != numeroDaSorte){
+        
+        chute = prompt(`Por favor informe um número entre 0 e ${numeroMaximo}`)
+        
+        if(chute == numeroDaSorte){
+            break;
+        }else{
+            if(chute > numeroDaSorte){
+                alert(`O número ${chute} é maior que o número da sorte`);
+            }else{
+                alert(`O número ${chute} é menor que o número da sorte`);
+            }
+            tentativa++
+        }
+    }
+
+    msgTentativa = tentativa > 1 ? 'tentativas' : 'tentativas';
+    alert(`Você acertou o número da sorte era ${numeroDaSorte} com um total de ${tentativa} ${msgTentativa}`);
+
+
+</script>
+</html>
